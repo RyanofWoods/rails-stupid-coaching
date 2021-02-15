@@ -1,13 +1,11 @@
-<h1>Answer</h1>
-
 <div class="statement">
-  <h3><%= @question %></h3>
-  <h3>-You</h3>
+  <p><%= @question %></p>
+  <p class="italic">-You</p>
 </div>
 
-<div class="statement">
-  <h3><%= @answer %></h3>
-  <h3>-Your coach</h3>
+<div class="statement yellow">
+  <p class="bold"><%= @answer %></p>
+  <p class="italic">-Your coach</p>
 </div>
 
 <%= link_to "Ask a new question", ask_path %>

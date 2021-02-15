@@ -1,3 +1,74 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$blue:#337AB7;
+$light-blue:#5ea2dd;
+$main-font: 'Roboto', sans-serif;
+
+body {
+  margin: 0 30px;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: $blue;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.statement {
+  margin: 30px 0;
+  padding: 2px 20px;
+  border-left: 6px solid #E7E7E7;
+  p {
+    font-family: $main-font;
+    font-size: 20;
+  }
+}
+.yellow {
+  background-color: #FEFEE0;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+form {
+  width: 100%;
+  position: relative;
+}
+#input_question {
+  box-sizing: border-box;
+  width: 80%;
+  border-radius: 8px 0 0 8px;
+  margin: 0;
+}
+#btn_question {
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  width: 20%;
+  border-radius: 0 8px 8px 0;
+  margin: 0;
+}
+.input-box {
+  padding: 8px;
+  border: 1px solid #aaa;
+}
+.btn {
+  font-family: $main-font;
+  padding: 8px 8px 9px 8px;
+  border: none;
+}
+.btn-blue {
+  background-color: $blue;
+  color: #fff;
+  transition: background 0.2s ease;
+  &:hover {
+    background-color: $light-blue;
+    cursor: pointer;
+  }
+}
